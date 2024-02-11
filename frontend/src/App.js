@@ -37,7 +37,7 @@ const App = () => {
     const [showAdminDeleteUser, setShowAdminDeleteUser] = useState(false);
     const [showAdminDeleteQuote, setShowAdminDeleteQuote] = useState(false);
 
-    const URL = 'https://api.quoteappforyou.com';
+    const URL = 'https://quotes-application-backend-env.eba-vt6fu8tt.us-east-1.elasticbeanstalk.com';
     
     const fetchUserData = async () => {
         const token = localStorage.getItem('token');
