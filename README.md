@@ -6,7 +6,7 @@
  
   This is one of the biggest projects I have taken on by myself, and it took about 3 weeks of information aggregating to put it all together, along with all the information I learned from the course. While its not a massive app, there is a decent amount of things for Users to do. This application serves as a testamate to my ability to implement frontend and backend integration that works with a NoSQL Database using the MERN Stack. 
 
-##Languages and Frameworks Used
+## Languages and Frameworks Used
 - JavaScript
 - TypeScript
 - MongoDB/Atlas
