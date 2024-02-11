@@ -37,7 +37,7 @@ const App = () => {
     const [showAdminDeleteUser, setShowAdminDeleteUser] = useState(false);
     const [showAdminDeleteQuote, setShowAdminDeleteQuote] = useState(false);
 
-    const URL = 'http://localhost:3000';
+    const URL = 'https://api.quoteappforyou.com';
     
     const fetchUserData = async () => {
         const token = localStorage.getItem('token');
