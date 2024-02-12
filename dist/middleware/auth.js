@@ -2,6 +2,9 @@ import jwt from 'jsonwebtoken';
 import env from 'dotenv';
 env.config();
 const auth = (req, res, next) => {
+    if (req.headers['user-agent'] && req.headers['user-agent'].startsWith('ELB-HealthChecker')) {
+        return next();
+    }
     try {
         const JWT_SECRET = process.env.JWT_SECRET;
         const authHeader = req.headers.authorization;
