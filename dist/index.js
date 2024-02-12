@@ -15,6 +15,9 @@ mongoose.connect(connectionString);
 app.use(express.json());
 app.use(cors());
 app.use(xss);
+app.get('/', (req, res) => {
+    res.status(200).send('OK');
+});
 app.use('/auth', authRouter);
 app.use(authenticated);
 app.use('/quotes', quoteRouter);
