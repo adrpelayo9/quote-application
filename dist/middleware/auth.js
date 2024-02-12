@@ -11,12 +11,17 @@ const auth = (req, res, next) => {
         next();
     }
     catch (err) {
-        res.status(401).json({ error: 'You are unauthenticated. Please login again. ' });
+        console.log('You are unauthenticated. Please login again. ');
+        res.status(401).json({
+            error: 'You are unauthenticated. Please login again. ',
+        });
     }
 };
 export const isAdmin = (req, res, next) => {
     if (!req.user.roles.includes('ADMIN')) {
-        return res.status(403).json({ error: "You are not allowed to do this action." });
+        return res
+            .status(403)
+            .json({ error: 'You are not allowed to do this action.' });
     }
     next();
 };

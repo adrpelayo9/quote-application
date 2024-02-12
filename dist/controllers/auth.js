@@ -34,7 +34,7 @@ export const login = async (req, res) => {
         res.status(500).json({ error: 'Internal error logging in.' });
     }
 };
-export const register = async (req, res, next) => {
+export const register = async (req, res) => {
     const user = req.body;
     const saltRounds = 10;
     const existingUser = await User.findOne({
