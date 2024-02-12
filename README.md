@@ -1,5 +1,6 @@
 ## Live Web Application
-  To be Updated.
+  A live version of this application can be used at: https://quote-application-eta.vercel.app/
+  Vercel is used to host the code from this github repository, specifically using the frontend section. The backend is being hosted separately on AWS using Elastic Beanstalk with an internet-facing Elastic Load Balancer, additionally using a Domain from Route 53 to re-route traffic to the EC2 instance running the server. All data is being sent over HTTPS using a public SSL/TLS Certification provisioned by AWS Certificate Manager.
  
  ## Quote Application
   This is a project I worked on as a result of my completion of the Backend Software Development course on Course Careers. This project includes a fully working front-end and back-end, including a MongoDB Database. This application allows a user to create an account, loging and get a signed JWT for authentication. With this, they are able to create a new quote and upload it to the database. Aswell, users are capable of editing or deleting their own quotes they uploaded. Along with that is user controls, including the capability to change their username or delete their account. All users also have the ability to see all users registered on the application, and all quotes uploaded. It even includes a query search where you can search for quotes based on a user's Username, User ID, the Author of the quote, or by the tags attached to the quote. I have also included Admin controls, which allow Admins to delete any user or quotes, excluding other Admin users or themselves.
